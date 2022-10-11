@@ -1,4 +1,4 @@
-import { createStream, table } from 'table';
+import { createStream } from 'table';
 
 export class tableView {
   constructor(numOfColumns) {
@@ -24,9 +24,5 @@ export class tableView {
 
   resultStream(data) {
     this.stream.write(data);
-  }
-
-  resultTable(data) {
-    return table(data);
   }
 }

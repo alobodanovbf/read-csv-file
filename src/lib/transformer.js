@@ -2,12 +2,12 @@ export const transformer = ({
   DatasetName,
   MonitoringLocationID: id,
   CharacteristicName: field,
-  ResultValue,
+  ResultValue: total,
 }) => {
   return {
     DatasetName,
     id,
     field,
-    total: ResultValue,
+    total,
   };
 };

@@ -13,5 +13,5 @@ yarn
 run it
 
 ```
-yarn start <filename>.csv --location="WS" --field="Temperature, water"
+yarn dev <filename>.csv --location="WS" --field="Temperature, water"
 ```

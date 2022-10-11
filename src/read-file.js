@@ -2,6 +2,7 @@ import fs from 'fs';
 import { parse } from '@fast-csv/parse';
 import { transformer } from './lib/transformer';
 import { tableView } from './table';
+import { average } from './lib/average';
 
 export async function readFile(filePath, argv) {
   const table = new tableView(3);
@@ -23,7 +24,7 @@ export async function readFile(filePath, argv) {
         table.resultStream([
           argv.location,
           argv.field,
-          (total / count).toFixed(2),
+          average(total, count),
         ]);
       } else {
         console.log('No Data');

@@ -1,5 +1,6 @@
-./yarn.lock
+yarn.lock
+node_modules
 
-./file.csv
-./midFile.csv
-./real.csv
+file.csv
+midFile.csv
+real.csv
