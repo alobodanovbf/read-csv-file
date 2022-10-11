@@ -21,11 +21,7 @@ export async function readFile(filePath, argv) {
     })
     .on('end', () => {
       if (count > 0) {
-        table.resultStream([
-          argv.location,
-          argv.field,
-          average(total, count),
-        ]);
+        table.resultStream([argv.location, argv.field, average(total, count)]);
       } else {
         console.log('No Data');
       }
